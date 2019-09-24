@@ -41,9 +41,13 @@ public class AccountEmailServiceTest
         greenMail.waitForIncomingEmail( 2000, 1 );
 
         Message[] msgs = greenMail.getReceivedMessages();
-		/*
+		
+		
+		/**********************************
         assertEquals( 1, msgs.length );
+		
         assertEquals( "admin@juvenxu.com", msgs[0].getFrom()[0].toString() );
+		
         assertEquals( subject, msgs[0].getSubject() );
         assertEquals( htmlText, GreenMailUtil.getBody( msgs[0] ).trim() );
 		*/
